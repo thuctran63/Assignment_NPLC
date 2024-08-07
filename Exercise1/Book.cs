@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assignment2
+namespace Exercise1
 {
-    class Book
+    public class Book
     {
-        private string? BookName;
-        private int ISBN;
-        private string? Author;
-        private string? Publisher;
+        public string? BookName { get; set; }
+        public int ISBN { get; set; }
+        public string? Author { get; set; }
+        public string? Publisher { get; set; }
 
         public Book(string? bookName, int isbn, string? author, string? publisher)
         {
@@ -20,6 +20,8 @@ namespace Assignment2
             Author = author;
             Publisher = publisher;
         }
+
+        public Book() { }
 
 
         // method

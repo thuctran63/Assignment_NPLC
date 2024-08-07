@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assignment2
+namespace Exercise2
 {
-    class Employee
+    public class Employee
     {
-        public string? FirstName { get;set; }
-        public string? LastName { get; set;  }
+        public string? FirstName { get; set; }
+        public string? LastName { get; set; }
         private double _MonthlySalary;
 
         public double MonthlySalary
@@ -21,7 +21,8 @@ namespace Assignment2
                 {
                     _MonthlySalary = value;
                 }
-                else                 {
+                else
+                {
                     _MonthlySalary = 0.0;
                 }
             }
@@ -36,6 +37,9 @@ namespace Assignment2
 
         public Employee() { }
 
-       
+        public override string ToString()
+        {
+            return $"{FirstName}\t{LastName}\t{MonthlySalary}";
+        }
     }
 }

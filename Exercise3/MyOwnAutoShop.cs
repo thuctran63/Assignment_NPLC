@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assignment2
+namespace Exercise3
 {
-    class MyOwnAutoShop
+    public class MyOwnAutoShop
     {
         public static void main()
         {
